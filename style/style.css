@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*--------------------------------------- GLOBALES -------------------------------------------------------------- */
+
+/*CENTRAR FLEXBOX*/
+
+.Centerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{text-decoration: none;}
+
+
+
+
+/*--------------------------------------- END GLOBALES-----------------------------------------------------------*/
+header{
+    background-color: #26877F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around     
+}
+
+.s1-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s2-header{
+    display: flex;
+    align-items: center;
+}
+
+.Centerbox h1{
+    color: rgb(255, 255, 255);
+}
+
+.logo img {
+    height: 100px;
+    margin: 2rem;
+}
+
+.navbar{
+    display: flex;
+}
+
+nav li {
+    list-style: none; 
+}
+
+nav a{
+    
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+li > a:hover{
+    background-color: rgb(54, 138, 23);
+    font-weight: bold;
+
+}
+
+/*-------------------------------------EFECTOS LOGOS HEADER-------------------------------------------------------*/
+@keyframes logoefect-rotate {
+    from{
+        opacity: 0;
+        rotate: 45deg;
+        scale: 0.5;
+       
+    }
+
+    to{
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1.5
+        
+    }
+    
+}
+
+@keyframes heading-rotate {
+    from{
+       
+        scale: 0.5;
+       
+    }
+
+    to{
+      
+        scale: 1
+        
+    }
+    
+}
+
+
+
+/* .efect-color */
+
+.logos-efect{
+    animation:logoefect-rotate 3s infinite ;
+}
+
+.heading-efect{
+    animation: heading-rotate 3s infinite;
+}
